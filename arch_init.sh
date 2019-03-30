@@ -15,5 +15,8 @@ pacstrap /mnt base-devel base
 #install driver for filesistem
 genfstab -U /mnt >> /mnt/etc/fstab
 
-#login in
-arch-chroot /mnt
+#copy part 2 script into root
+mv arch_init_part_2.sh /mnt
+
+#start part 2
+arch-chroot /mnt bash arch_init_part_2.sh
