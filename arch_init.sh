@@ -6,8 +6,8 @@
 # mkfs -t ext2 -L Lable /dev/sda*
 
 #Set link for download
-link = $(grep ".ru" /etc/pacman.d/mirrorlist)
-sed -i '1i $link\n' /etc/pacman.d/mirrorlist
+link = ($(grep ".ru" /etc/pacman.d/mirrorlist))
+sed -i '1i $link \n' /etc/pacman.d/mirrorlist
 
 #install arch
 pacstrap /mnt base-devel base
@@ -20,3 +20,6 @@ mv arch_init_part_2.sh /mnt
 
 #start part 2
 arch-chroot /mnt bash arch_init_part_2.sh
+
+#finish
+umount -R /mnt && reboot
