@@ -28,13 +28,9 @@ useradd -m -g users -G wheel -s /bin/bash ikar
 passwd 
 sed -i 's/^# *\(%wheel ALL=(ALL) ALL\)/\1/' /etc/sudoers
 
-#set load
-pacman -Sy os-prober grub efibootmgr
-mkdir /boot/efi
-mkdir /boot/grub
-os-prober
-grub-mkconfig -o /boot/grub/grub.cfg
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+#Setup load
+pacman -S --noconfirm refind-efi 
+refind-install
 
 #finish
 exit
