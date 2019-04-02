@@ -28,6 +28,7 @@ sed -i 's/^# *\(%wheel ALL=(ALL) ALL\)/\1/' /etc/sudoers
 #Setup load
 pacman -S --noconfirm refind-efi 
 refind-install
+mkrlconf
 
 #Setup packages
 pacman -S --noconfirm git dialog vim bash-completion
