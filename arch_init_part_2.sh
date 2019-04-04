@@ -31,7 +31,7 @@ refind-install
 mkrlconf
 
 #Setup packages
-pacman -S --noconfirm git dialog vim bash-completion
+pacman -S --noconfirm git dialog wpa_supplicant vim bash-completion
 
 #finish
 exit
