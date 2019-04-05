@@ -17,6 +17,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 #copy part 2 script into root
 mv arch_init_part_2.sh /mnt
 
+mv arch_configure.sh /mnt
+
 #start part 2
 arch-chroot /mnt bash arch_init_part_2.sh
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -S nvidia-390xx-utils
+pacman -S --noconfirm xf86-video-vesa
 pacman -S --noconfirm xorg-server xorg-apps xorg-xinit mesa
 pacman -S --noconfirm xorg-twm xterm xorg-xclock
 

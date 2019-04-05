@@ -33,5 +33,7 @@ mkrlconf
 #Setup packages
 pacman -S --noconfirm git dialog wpa_supplicant vim bash-completion
 
+sh arch_configure.sh
+
 #finish
 exit
