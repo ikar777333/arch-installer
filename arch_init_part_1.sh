@@ -9,7 +9,7 @@
 echo -e "$(grep ".*.ru.*" /etc/pacman.d/mirrorlist)\n$(cat /etc/pacman.d/mirrorlist)" > /etc/pacman.d/mirrorlist
 
 mkfs.ext4 /dev/sda2
-mkfs.cflat /dev/sda1
+mkfs.vfat /dev/sda1
 mount /dev/sda2 /mnt
 mkdir -p /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
