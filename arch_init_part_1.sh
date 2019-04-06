@@ -8,6 +8,12 @@
 #Setup mirrorlist
 echo -e "$(grep ".*.ru.*" /etc/pacman.d/mirrorlist)\n$(cat /etc/pacman.d/mirrorlist)" > /etc/pacman.d/mirrorlist
 
+mkfs.ext4 /dev/sda2
+mkfs.cflat /dev/sda1
+mount /dev/sda2 /mnt
+mkdir -p /mnt/boot/efi
+mount /dev/sda1 /mnt/boot/efi
+
 #install arch
 pacstrap /mnt base-devel base
 
@@ -26,4 +32,4 @@ arch-chroot /mnt bash arch_init_part_2.sh
 cp -R /etc/netctl/ /mnt/etc/netctl
 
 #finish
-umount -R /mnt && reboot
+#umount -R /mnt && reboot

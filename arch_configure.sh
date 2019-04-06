@@ -11,4 +11,4 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc
 pacman -S --noconfirm alsa-utils alsa-plugins
 
 pacman -S --noconfirm i3 slim
-systemctl enable slim.service
+#systemctl enable slim.service
