@@ -22,7 +22,7 @@ passwd
 
 #Setup user
 useradd -m -g users -G wheel -s /bin/bash ikar
-passwd 
+passwd ikar 
 sed -i 's/^# *\(%wheel ALL=(ALL) ALL\)/\1/' /etc/sudoers
 
 #Setup load

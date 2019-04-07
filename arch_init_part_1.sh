@@ -28,8 +28,5 @@ mv arch_configure.sh /mnt
 #start part 2
 arch-chroot /mnt bash arch_init_part_2.sh
 
-#
-cp -R /etc/netctl/ /mnt/etc/netctl
-
 #finish
-#umount -R /mnt && reboot
+umount -R /mnt && reboot
