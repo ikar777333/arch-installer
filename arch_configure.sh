@@ -13,7 +13,7 @@ pacman -S --noconfirm ranger wget chromium
 
 #Visual install
 pacman -S --noconfirm i3 slim rofi polybar feh
-systemctl enable slim.service
+#systemctl enable slim.service
 
 #Zsh install
 pacman -S --noconfirm zsh
