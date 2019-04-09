@@ -38,7 +38,7 @@ cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/ethernet-dhcp
 sed -i 's/Interface=eth0/Interface=enp0s3/g' /etc/netctl/ethernet-dhcp
 netctl enable ethernet-dhcp
 
-#sh arch_configure.sh
+sh arch_configure.sh
 
 #finish
 exit
