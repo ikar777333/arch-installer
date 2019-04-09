@@ -29,4 +29,4 @@ mv arch_configure.sh /mnt
 arch-chroot /mnt bash arch_init_part_2.sh
 
 #finish
-umount -R /mnt && reboot
+#umount -R /mnt && reboot
