@@ -6,13 +6,13 @@ pacman -S --noconfirm xterm
 
 sudo -u ikar Xorg :0 -configure
 cp /root/xorg.conf.new /etc/X11/xorg.conf
-sudo -u ikar wget -P /home/ikar/ https://github.com/ikar777333/arch-installer/raw/prototype_of_configure/configs/.xinitrc
+sudo -u ikar wget -P /home/ikar/ https://raw.githubusercontent.com/ikar777333/arch-installer/prototype_of_configure/configs/.xinitrc
 
 pacman -S --noconfirm alsa-utils alsa-plugins
 pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-pacman -S --noconfirm i3 slim rofi polybar feh
+pacman -S --noconfirm i3 slim rofi feh
 #systemctl enable slim.service
 
 #Yey install
@@ -26,6 +26,6 @@ pacman -S --noconfirm zsh
 sudo -u ikar zsh
 chsh -s /bin/zsh root
 chsh -s /bin/zsh ikar
-sudo -u ikar wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+sudo -u ikar wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | zsh
 
 #copy configs files
