@@ -20,10 +20,12 @@ pacstrap /mnt base-devel base
 #install driver for filesistem
 genfstab -U /mnt >> /mnt/etc/fstab
 
-#copy part 2 script into root
-mv arch_init_part_2.sh /mnt
-
-mv arch_configure.sh /mnt
+#move scripts and configs into root
+mkdir /mnt/arch_installer_scripts/
+mv arch_init_part_2.sh /mnt/arch_installer_scripts/
+mv arch_configure.sh /mnt/arch_installer_scripts/
+mv configs /mnt/arch_installer_scripts/
+wget -P /mnt/arch_installer_scripts/ https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 
 #start part 2
 arch-chroot /mnt bash arch_init_part_2.sh
