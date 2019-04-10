@@ -28,7 +28,7 @@ mv configs /mnt/arch_installer_scripts
 wget -P /mnt/arch_installer_scripts https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 
 #start part 2
-arch-chroot /mnt/arch_installer_scripts bash arch_init_part_2.sh
+arch-chroot /mnt bash /mnt/arch_installer_scripts/arch_init_part_2.sh
 
 #finish
 #umount -R /mnt && reboot
