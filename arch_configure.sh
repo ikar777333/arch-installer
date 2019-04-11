@@ -2,7 +2,7 @@
 
 sudo pacman -S --noconfirm xf86-video-vesa 
 sudo pacman -S --noconfirm xorg-server xorg-apps xorg-xinit mesa 
-sudo pacman -S --noconfirm xterm
+sudo pacman -S --noconfirm termite
 
 cd /home/ikar/
 Xorg :0 -configure
