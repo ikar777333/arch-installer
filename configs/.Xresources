@@ -1,0 +1,47 @@
+*foreground: #ffffff
+*foreground_bold: #888888
+*cursor: #888888
+!!background      = #1b1918
+!!*background: rgba(0, 0, 0, .7)
+
+!! black
+*color0: #222222
+*color8: #222222
+!! red
+*color1: #ff0000
+*color9: #ff0000
+!! green
+*color2: #00ff00
+*color10: #00ff00
+!! yellow
+*color3: #888800
+*color11: #aaaa00
+!! blue
+*color4: #0000ff
+*color12: #0000ff
+!! magenta
+*color5: #ff00ff
+*color13: #ff00ff
+!! cyan
+*color6: #008888
+*color14: #008888
+!! white
+*color7: #cccccc
+*color15: #cccccc
+
+
+
+URxvt.intensityStyles:	false
+URxvt.background:       [70]#000000
+URxvt.depth:		32
+URxvt.font: 		xft:Terminess Powerline:size=8
+URxvt.scrollBar:	false
+URxvt.cursorColor:	white
+URxvt.perl-ext-common:	default,matcher,resize-font
+URxvt.perl-lib:		$HOME/.config/Scripts
+URxvt.url-launcher:	/usr/bin/xdg-open
+URxvt.matcher.button:	1
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+
+URxvt.colorUL:		#4682B4
