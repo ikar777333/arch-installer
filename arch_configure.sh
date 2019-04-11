@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-sudo pacman -S --noconfirm i3 slim rofi feh
+sudo pacman -S --noconfirm i3 slim rofi feh neovim
 #systemctl enable slim.service
 
 #Yey install
@@ -29,6 +29,13 @@ zsh /arch_installer_scripts/install.sh
 
 #Polybar install
 sudo yay -S polybar
+
+#Vim setup
+sudo yay -S neovim-plug
+mkdir /home/ikar/.config/neovim
+sudo cp /arch_installer_scripts/configs/neovim/init.vim /home/ikar/.config/neovim/
+
+sudo yay -S visual-studio-code-bin
 
 #copy configs files
 sudo cp /arch_installer_scripts/configs/.xinitrc /home/ikar/
