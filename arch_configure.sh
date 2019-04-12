@@ -22,10 +22,10 @@ cd yay
 makepkg -si
 
 #Zsh install
-sudo pacman -S --noconfirm zsh
-sudo chsh -s /bin/zsh ikar
-sudo chsh -s /bin/zsh root
-zsh /arch_installer_scripts/install.sh
+#sudo pacman -S --noconfirm zsh
+#sudo chsh -s /bin/zsh ikar
+#sudo chsh -s /bin/zsh root
+#zsh /arch_installer_scripts/install.sh
 
 #Polybar install
 sudo yay -S polybar
@@ -38,6 +38,7 @@ sudo cp /arch_installer_scripts/configs/neovim/init.vim /home/ikar/.config/neovi
 sudo yay -S visual-studio-code-bin
 
 #copy configs files
+mkdir /home/ikar/.config
 sudo cp /arch_installer_scripts/configs/.xinitrc /home/ikar/
 mkdir /home/ikar/.config/rofi
 sudo cp /arch_installer_scripts/configs/rofi/config /home/ikar/.config/rofi/
