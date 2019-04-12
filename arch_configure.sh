@@ -21,21 +21,15 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-#Zsh install
-#sudo pacman -S --noconfirm zsh
-#sudo chsh -s /bin/zsh ikar
-#sudo chsh -s /bin/zsh root
-#zsh /arch_installer_scripts/install.sh
-
 #Polybar install
-sudo yay -S polybar
+yay -S polybar
 
 #Vim setup
-sudo yay -S neovim-plug
-mkdir /home/ikar/.config/neovim
-sudo cp /arch_installer_scripts/configs/neovim/init.vim /home/ikar/.config/neovim/
+yay -S neovim-plug
+mkdir /home/ikar/.config/nvim
+sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
-sudo yay -S visual-studio-code-bin
+yay -S visual-studio-code-bin
 
 #copy configs files
 mkdir /home/ikar/.config
@@ -44,3 +38,9 @@ mkdir /home/ikar/.config/rofi
 sudo cp /arch_installer_scripts/configs/rofi/config /home/ikar/.config/rofi/
 mkdir /home/ikar/.config/polybar
 sudo cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polybar/
+
+#Zsh install
+sudo pacman -S --noconfirm zsh
+sudo chsh -s /bin/zsh ikar
+sudo chsh -s /bin/zsh root
+zsh /arch_installer_scripts/install.sh
