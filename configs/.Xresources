@@ -1,47 +1,37 @@
-*foreground: #ffffff
-*foreground_bold: #888888
-*cursor: #888888
-!!background      = #1b1918
-!!*background: rgba(0, 0, 0, .7)
+    
+! special
+*.foreground:   #e0f2ec
+*.background:   #11292e
+*.cursorColor:  #e0f2ec
 
-!! black
-*color0: #222222
-*color8: #222222
-!! red
-*color1: #ff0000
-*color9: #ff0000
-!! green
-*color2: #00ff00
-*color10: #00ff00
-!! yellow
-*color3: #888800
-*color11: #aaaa00
-!! blue
-*color4: #0000ff
-*color12: #0000ff
-!! magenta
-*color5: #ff00ff
-*color13: #ff00ff
-!! cyan
-*color6: #008888
-*color14: #008888
-!! white
-*color7: #cccccc
-*color15: #cccccc
+! black
+*.color0:       #0e1f22
+*.color8:       #1c4b4e
 
+! red
+*.color1:       #a85659
+*.color9:       #eb8995
 
+! green
+*.color2:       #668e8c
+*.color10:      #82aea9
 
-URxvt.intensityStyles:	false
-URxvt.background:       [70]#000000
-URxvt.depth:		32
-URxvt.font: 		xft:Terminess Powerline:size=8
-URxvt.scrollBar:	false
-URxvt.cursorColor:	white
-URxvt.perl-ext-common:	default,matcher,resize-font
-URxvt.perl-lib:		$HOME/.config/Scripts
-URxvt.url-launcher:	/usr/bin/xdg-open
-URxvt.matcher.button:	1
-URxvt.resize-font.smaller:	C-Down
-URxvt.resize-font.bigger:	C-Up
+! yellow
+*.color3:       #c3b6a4
+*.color11:      #e1d9ce
 
-URxvt.colorUL:		#4682B4
+! blue
+*.color4:       #326d78
+*.color12:      #a7d2cd
+
+! magenta (or orange)
+*.color5:       #433c32
+*.color13:      #aa9576
+
+! cyan
+*.color6:       #386e74
+*.color14:      #90c0bd
+
+! white
+*.color7:       #e0f2ec
+*.color15:      #f0f8f3

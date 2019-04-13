@@ -12,8 +12,8 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-sudo pacman -S --noconfirm i3 slim rofi feh neovim
-systemctl enable slim.service
+sudo pacman -S --noconfirm i3 slim rofi feh neovim neofetch cmus htop thunar w3m
+sudo systemctl enable slim.service
 
 #Yey install
 cd /home/ikar/
@@ -40,6 +40,7 @@ mkdir /home/ikar/.config/polybar
 sudo cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polybar/
 mkdir /home/ikar/.config/i3
 sudo cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
+sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
 
 #Zsh install
 sudo pacman -S --noconfirm zsh
