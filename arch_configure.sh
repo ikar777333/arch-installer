@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-sudo pacman -S --noconfirm i3 slim rofi feh neovim neofetch cmus htop thunar w3m
+sudo pacman -S --noconfirm i3 slim rofi feh neovim neofetch cmus htop thunar w3m node npm powerline-fonts maven rxvt-unicode
 sudo systemctl enable slim.service
 
 #Yey install

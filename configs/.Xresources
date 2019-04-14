@@ -1,37 +1,51 @@
-    
-! special
-*.foreground:   #e0f2ec
-*.background:   #11292e
-*.cursorColor:  #e0f2ec
+URxvt*scrollTtyOutput: true
+! Scroll relative to buffer
+URxvt*scrollWithBuffer: true
+! Scroll to bottom on keypress
+URxvt*scrollTtyKeypress: true
+URxvt.scrollstyle: rxvt
+URxvt.scrollBar: False
+URxvt.saveLines: 2000
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: False
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+!Monaco
+URxvt.font: xft:DejaVu Sans Mono for Powerline-7
+URxvt.letterSpace: -1
+!Tango theme
+!URxvt.background: #1C1C1C
+URxvt.foreground: #DEDEDE
+!
+! ! black
+URxvt.color0  : #2E3436
+URxvt.color8  : #555753
+! ! red
+URxvt.color1  : #CC0000
+URxvt.color9  : #EF2929
+! ! green
+URxvt.color2  : #4E9A06
+URxvt.color10 : #8AE234
+! ! yellow
+URxvt.color3  : #C4A000
+URxvt.color11 : #FCE94F
+! ! blue
+URxvt.color4  : #3465A4
+URxvt.color12 : #729FCF
+! ! magenta
+URxvt.color5  : #75507B
+URxvt.color13 : #AD7FA8
+! ! cyan
+URxvt.color6  : #06989A
+URxvt.color14 : #34E2E2
+! ! white
+URxvt.color7  : #D3D7CF
+URxvt.color15 : #EEEEEC
 
-! black
-*.color0:       #0e1f22
-*.color8:       #1c4b4e
-
-! red
-*.color1:       #a85659
-*.color9:       #eb8995
-
-! green
-*.color2:       #668e8c
-*.color10:      #82aea9
-
-! yellow
-*.color3:       #c3b6a4
-*.color11:      #e1d9ce
-
-! blue
-*.color4:       #326d78
-*.color12:      #a7d2cd
-
-! magenta (or orange)
-*.color5:       #433c32
-*.color13:      #aa9576
-
-! cyan
-*.color6:       #386e74
-*.color14:      #90c0bd
-
-! white
-*.color7:       #e0f2ec
-*.color15:      #f0f8f3
+URxvt.transparent: true
+URxvt.shading:20
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.dpi: 150
