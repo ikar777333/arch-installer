@@ -30,6 +30,8 @@ mkdir /home/ikar/.config/nvim
 sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
 yay -S visual-studio-code-bin
+yay -S jdk
+yay -S ttf-dejavu-sans-mono-powerline-git
 
 #copy configs files
 mkdir /home/ikar/.config
@@ -41,6 +43,7 @@ sudo cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polyba
 mkdir /home/ikar/.config/i3
 sudo cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
 sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
+sudo cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 sudo cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
 
 #Zsh install
@@ -48,3 +51,6 @@ sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 zsh /arch_installer_scripts/install.sh
+
+sudo rm -R /arch_installer_scripts
+rm -R /home/ikar/yay
