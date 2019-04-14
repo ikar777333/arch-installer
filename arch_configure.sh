@@ -41,6 +41,7 @@ sudo cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polyba
 mkdir /home/ikar/.config/i3
 sudo cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
 sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
+sudo cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
 
 #Zsh install
 sudo pacman -S --noconfirm zsh
