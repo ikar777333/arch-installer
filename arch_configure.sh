@@ -49,13 +49,10 @@ sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
 sudo cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 sudo cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
 
+bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
+
 #Zsh install
 sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 zsh /arch_installer_scripts/install.sh
-
-bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
-
-sudo rm -R /arch_installer_scripts
-rm -R /home/ikar/yay
