@@ -175,4 +175,4 @@ new_window 1pixel
 
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 
-fex --bg-scale /home/ikar/.config/walls/index.png
+exec_always fex --bg-scale /home/ikar/.config/walls/index.png
