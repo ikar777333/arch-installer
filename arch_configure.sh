@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-sudo pacman -S --noconfirm i3 slim rofi feh neovim neofetch cmus htop thunar w3m node npm powerline-fonts maven rxvt-unicode
+sudo pacman -S --noconfirm i3 slim rofi feh neovim neofetch cmus htop thunar w3m node npm powerline-fonts maven rxvt-unicode urxvt-perls lxappearance-gtk3
 sudo systemctl enable slim.service
 
 #Yey install
@@ -30,8 +30,10 @@ mkdir /home/ikar/.config/nvim
 sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
 yay -S visual-studio-code-bin
-yay -S jdk
+yay -S jdk8
 yay -S ttf-dejavu-sans-mono-powerline-git
+yay -S urxvt-font-size-git
+yay -S i3lock-color
 
 #copy configs files
 mkdir /home/ikar/.config
@@ -51,6 +53,8 @@ sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 zsh /arch_installer_scripts/install.sh
+
+bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
 
 sudo rm -R /arch_installer_scripts
 rm -R /home/ikar/yay
