@@ -172,6 +172,8 @@ exec_always xrdb -merge ~/.Xresources
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
+gaps inner 10
+gaps outer 15
 
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 

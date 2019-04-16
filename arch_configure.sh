@@ -13,7 +13,7 @@ sudo pacman -S --noconfirm ranger wget chromium
 
 #Visual install
 sudo pacman -S --noconfirm  slim rofi feh neovim neofetch cmus htop thunar w3m nodejs npm powerline-fonts maven rxvt-unicode urxvt-perls lxappearance-gtk3
-sudo pacman -S --noconfirm i3
+sudo pacman -S --noconfirm i3-gaps
 sudo systemctl enable slim.service
 
 #Yey install
@@ -48,6 +48,7 @@ sudo cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
 sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
 sudo cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 sudo cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
+cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/.config/
 
 #bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
 
@@ -56,6 +57,6 @@ sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/install.sh
-cd -i /arch_installer_scripts/configs/.zshrc /home/ikar/.config/
+
 
 echo "end"
