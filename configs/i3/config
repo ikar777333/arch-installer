@@ -172,9 +172,9 @@ exec_always xrdb -merge ~/.Xresources
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
-gaps inner 10
-gaps outer 15
+gaps inner 5
+gaps outer 5
 
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 
-exec_always fex --bg-scale /home/ikar/.config/walls/index.png
+exec_always feh --bg-scale /home/ikar/.config/walls/index.png

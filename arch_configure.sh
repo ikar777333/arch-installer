@@ -37,18 +37,19 @@ yay -S urxvt-font-size-git
 yay -S i3lock-color
 
 #copy configs files
+sudo chown -R ikar:users /arch_installer_scripts/configs
 mkdir /home/ikar/.config
-sudo cp /arch_installer_scripts/configs/.xinitrc /home/ikar/
+cp /arch_installer_scripts/configs/.xinitrc /home/ikar/
 mkdir /home/ikar/.config/rofi
-sudo cp /arch_installer_scripts/configs/rofi/config /home/ikar/.config/rofi/
+cp /arch_installer_scripts/configs/rofi/config /home/ikar/.config/rofi/
 mkdir /home/ikar/.config/polybar
-sudo cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polybar/
+cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polybar/
 mkdir /home/ikar/.config/i3
-sudo cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
-sudo cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
-sudo cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
-sudo cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
-cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/.config/
+cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
+cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
+cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
+cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
+cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
 
 #bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
 
