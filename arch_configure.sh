@@ -12,7 +12,8 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 #Visual install
-sudo pacman -S --noconfirm  slim rofi feh neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3
+sudo pacman -S --noconfirm  slim rofi feh neovim neofetch 
+#cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3
 sudo pacman -S --noconfirm i3-gaps
 sudo systemctl enable slim.service
 
@@ -50,7 +51,7 @@ cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
 cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
 
-curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh
+wget https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh
 zsh Install.sh
 
 #Zsh install
@@ -59,5 +60,7 @@ sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/install.sh
 cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
-
-echo "end"
+mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -L -o $ZSH_CUSTOM/themes/bullet-train.zsh-theme
+mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme -L -o $ZSH_CUSTOM/themes/bunnyruni.zsh-theme
+sudo rm -R /arch_installer_scripts
+rm -R /home/ikar/yay
