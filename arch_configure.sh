@@ -60,7 +60,7 @@ sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/install.sh
 cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
-mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -L -o $ZSH_CUSTOM/themes/bullet-train.zsh-theme
-mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme -L -o $ZSH_CUSTOM/themes/bunnyruni.zsh-theme
+sudo mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -L -o $ZSH_CUSTOM/themes/bullet-train.zsh-theme
+sudo mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme -L -o $ZSH_CUSTOM/themes/bunnyruni.zsh-theme
 sudo rm -R /arch_installer_scripts
 rm -R /home/ikar/yay
