@@ -30,7 +30,7 @@ mkdir /home/ikar/.config/nvim
 sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
 yay -S --noconfirm visual-studio-code-bin
-yay -S jdk8
+yay -S --noconfirm jdk8
 yay -S --noconfirm ttf-dejavu-sans-mono-powerline-git
 yay -S --noconfirm urxvt-font-size-git
 yay -S --noconfirm i3lock-color
@@ -60,5 +60,3 @@ sh /arch_installer_scripts/install.sh
 cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
 curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -L -o /home/ikar/.oh-my-zsh/themes/bullet-train.zsh-theme
 curl https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme -L -o  /home/ikar/.oh-my-zsh/themes/bunnyruni.zsh-theme
-sudo rm -R /arch_installer_scripts
-rm -R /home/ikar/yay
