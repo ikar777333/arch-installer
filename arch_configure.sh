@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm alsa-utils alsa-plugins
 sudo pacman -S --noconfirm ranger wget chromium 
 
 sudo pacman -S --noconfirm  slim rofi feh neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 pythom-pywal
-sudo pacman -S --noconfirm i3-gaps slim rofi feh neovim
+sudo pacman -S --noconfirm i3-gaps slim rofi
 sudo systemctl enable slim.service
 
 #Yey install
