@@ -26,6 +26,10 @@ mv arch_init_part_2.sh /mnt/arch_installer_scripts
 mv arch_configure.sh /mnt/arch_installer_scripts
 mv configs /mnt/arch_installer_scripts
 wget -P /mnt/arch_installer_scripts https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
+wget -P /mnt/arch_installer_scripts https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh
+git clone /mnt/arch_installer_scripts https://github.com/denysdovhan/spaceship-prompt
+git clone /mnt/arch_installer_scripts https://github.com/zsh-users/zsh-autosuggestions
+git clone /mnt/arch_installer_scripts https://github.com/zsh-users/zsh-syntax-highlighting
 
 #start part 2
 arch-chroot /mnt bash /arch_installer_scripts/arch_init_part_2.sh

@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -178,3 +178,10 @@ gaps outer 5
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 
 exec_always feh --bg-scale /home/ikar/.config/walls/index.png
+exec_always xcompmgr -c
+exec_always wal -R
+
+exec --no-startup-id termite --name=dropdown
+for_window [instance="dropdown"] floating enable;
+for_window [instance="dropdown"] move scratchpad; [instance="dropdown"] scratchpad show; move scratchpad
+bindsym $mod+u [instance="dropdown"] scratchpad show
