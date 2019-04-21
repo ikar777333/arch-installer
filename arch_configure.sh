@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm ranger wget chromium
 
 sudo pacman -S --noconfirm termite neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 
 sudo pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr
+sudo pacman -S --noconfirm ttf-ubuntu-font-family zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps tmux
 sudo systemctl enable slim.service
 
 #Yey install
@@ -31,7 +32,6 @@ sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
 yay -S --noconfirm visual-studio-code-bin
 yay -S --noconfirm jdk8
-yay -S --noconfirm ttf-dejavu-sans-mono-powerline-git
 yay -S --noconfirm urxvt-font-size-git
 yay -S --noconfirm i3lock-color
 
