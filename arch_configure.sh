@@ -50,13 +50,13 @@ cp /arch_installer_scripts/configs/termite/config /home/ikar/.config/termite
 cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
 
-zsh Install.sh
+zsh refind-theme-regular.sh
 
 #Zsh install
 sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
-sh /arch_installer_scripts/install.sh
+sh /arch_installer_scripts/oh-my-zsh.sh
 cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
 cp /arch_installer_scripts/spaceship-prompt /home/ikar/.oh-my-zsh/themes
 cp /arch_installer_scripts/zsh-autosuggestions /home/ikar/.oh-my-zsh/plugins
