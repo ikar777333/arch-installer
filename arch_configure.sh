@@ -58,6 +58,6 @@ sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/oh-my-zsh.sh
 cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
-cp /arch_installer_scripts/spaceship-prompt /home/ikar/.oh-my-zsh/themes
-cp /arch_installer_scripts/zsh-autosuggestions /home/ikar/.oh-my-zsh/plugins
-cp /arch_installer_scripts/zsh-syntax-highlighting /home/ikar/.oh-my-zsh/plugins
+cp -r /arch_installer_scripts/spaceship-prompt /home/ikar/.oh-my-zsh/themes
+cp -r /arch_installer_scripts/zsh-autosuggestions /home/ikar/.oh-my-zsh/plugins
+cp -r /arch_installer_scripts/zsh-syntax-highlighting /home/ikar/.oh-my-zsh/plugins
