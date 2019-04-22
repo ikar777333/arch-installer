@@ -11,9 +11,9 @@ sudo cp /root/xorg.conf.new /etc/X11/xorg.conf
 sudo pacman -S --noconfirm alsa-utils alsa-plugins 
 sudo pacman -S --noconfirm ranger wget chromium 
 
-#Visual install
-sudo pacman -S --noconfirm  slim rofi feh neovim neofetch cmus htop thunar w3m nodejs npm powerline-fonts maven rxvt-unicode urxvt-perls lxappearance-gtk3
-sudo pacman -S --noconfirm i3-gaps
+sudo pacman -S --noconfirm termite neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 
+sudo pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr
+sudo pacman -S --noconfirm ttf-ubuntu-font-family zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps tmux
 sudo systemctl enable slim.service
 
 #Yey install
@@ -26,15 +26,14 @@ makepkg -si
 yay -S polybar
 
 #Vim setup
-yay -S neovim-plug
+yay -S --noconfirm neovim-plug
 mkdir /home/ikar/.config/nvim
 sudo cp /arch_installer_scripts/configs/nvim/init.vim /home/ikar/.config/nvim/
 
-yay -S visual-studio-code-bin
-yay -S jdk8
-yay -S ttf-dejavu-sans-mono-powerline-git
-yay -S urxvt-font-size-git
-yay -S i3lock-color
+yay -S --noconfirm visual-studio-code-bin
+yay -S --noconfirm jdk8
+yay -S --noconfirm urxvt-font-size-git
+yay -S --noconfirm i3lock-color
 
 #copy configs files
 sudo chown -R ikar:users /arch_installer_scripts/configs
@@ -46,18 +45,19 @@ mkdir /home/ikar/.config/polybar
 cp /arch_installer_scripts/configs/polybar/config /home/ikar/.config/polybar/
 mkdir /home/ikar/.config/i3
 cp -i /arch_installer_scripts/configs/i3/config /home/ikar/.config/i3/
-cp -i /arch_installer_scripts/configs/.Xresources /home/ikar/
+mkdir /home/ikar/.config/termite
+cp /arch_installer_scripts/configs/termite/config /home/ikar/.config/termite
 cp -i -R /arch_installer_scripts/configs/ranger /home/ikar/.config/
 cp -R /arch_installer_scripts/configs/walls /home/ikar/.config/walls
-cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
 
-#bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
+zsh refind-theme-regular.sh
 
 #Zsh install
 sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
-sh /arch_installer_scripts/install.sh
-
-
-echo "end"
+sh /arch_installer_scripts/oh-my-zsh.sh
+cp -i /arch_installer_scripts/configs/.zshrc /home/ikar/
+cp -r /arch_installer_scripts/spaceship-prompt /home/ikar/.oh-my-zsh/themes
+cp -r /arch_installer_scripts/zsh-autosuggestions /home/ikar/.oh-my-zsh/plugins
+cp -r /arch_installer_scripts/zsh-syntax-highlighting /home/ikar/.oh-my-zsh/plugins
