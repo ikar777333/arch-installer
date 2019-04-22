@@ -178,10 +178,12 @@ gaps outer 5
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 
 exec_always feh --bg-scale /home/ikar/.config/walls/index.png
-exec_always xcompmgr -c
-exec_always wal -R
+exec --no-startup-id xcompmgr -c
+exec --no-startup-id wal -R
 
 exec --no-startup-id termite --name=dropdown
 for_window [instance="dropdown"] floating enable;
 for_window [instance="dropdown"] move scratchpad; [instance="dropdown"] scratchpad show; move scratchpad
 bindsym $mod+u [instance="dropdown"] scratchpad show
+
+exec --no-startup-id setxkbmap -option caps:escape
