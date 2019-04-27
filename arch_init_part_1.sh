@@ -31,7 +31,7 @@ wget -O /mnt/arch_installer_scripts/refind-theme-regular.sh https://raw.githubus
 #start part 2
 arch-chroot /mnt bash /arch_installer_scripts/arch_init_part_2.sh
 
-arch-chroot /mnt bash /arch_installer_scripts/arch_configure.sh
+arch-chroot -u ikar /mnt bash /arch_installer_scripts/arch_configure.sh
 
 #finish
 umount -R /mnt && reboot
