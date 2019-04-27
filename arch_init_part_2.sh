@@ -41,8 +41,9 @@ cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/ethernet-dhcp
 sed -i 's/Interface=eth0/Interface=enp0s3/g' /etc/netctl/ethernet-dhcp
 netctl enable ethernet-dhcp
 
-cd -r /arch_installer_scripts/dots
-sudo -u ikar sh install.sh
+#cd -r /arch_installer_scripts/dots
+#sudo -u ikar sh install.sh
+sh arch_configure.sh
 
 #finish
 exit
