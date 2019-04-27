@@ -18,10 +18,12 @@ sed -i '1i 127.0.0.1 deus.localdomain deus \n' /etc/hosts
 mkinitcpio -p linux
 
 #Setup superuser
+echo 'Root password'
 passwd
 
 #Setup user
 useradd -m -g users -G wheel -s /bin/bash ikar
+echo 'Root user'
 passwd ikar 
 sed -i 's/^# *\(%wheel ALL=(ALL) ALL\)/\1/' /etc/sudoers
 
