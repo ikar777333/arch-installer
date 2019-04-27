@@ -24,7 +24,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 mkdir /mnt/arch_installer_scripts
 mv arch_init_part_2.sh /mnt/arch_installer_scripts
 mv arch_configure.sh /mnt/arch_installer_scripts
-mv configs /mnt/arch_installer_scripts
+mv modules/dots /mnt/arch_installer_scripts
 wget -O /mnt/arch_installer_scripts/oh-my-zsh.sh https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 wget -O /mnt/arch_installer_scripts/refind-theme-regular.sh https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/install.sh
 
