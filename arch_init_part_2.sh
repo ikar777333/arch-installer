@@ -43,7 +43,7 @@ netctl enable ethernet-dhcp
 
 #cd -r /arch_installer_scripts/dots
 #sudo -u ikar sh install.sh
-sh arch_configure.sh
+sudo -u ikar sh /arch_installer_scripts/arch_configure.sh
 
 #finish
 exit
