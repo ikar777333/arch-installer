@@ -45,5 +45,19 @@ netctl enable ethernet-dhcp
 #sudo -u ikar sh install.sh
 #sudo -u ikar sh /arch_installer_scripts/arch_configure.sh
 
+
+pacman -S --noconfirm xf86-video-vesa 
+pacman -S --noconfirm xorg-server xorg-apps xorg-xinit mesa 
+pacman -S --noconfirm termite
+pacman -S --noconfirm alsa-utils alsa-plugins 
+pacman -S --noconfirm ranger wget chromium 
+pacman -S --noconfirm termite neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 
+pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr
+pacman -S --noconfirm ttf-ubuntu-font-family zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps tmux
+cd /home/ikar/
+sudo -u ikar Xorg :0 -configure
+cp /root/xorg.conf.new /etc/X11/xorg.conf
+systemctl enable slim.service
+
 #finish
 exit
