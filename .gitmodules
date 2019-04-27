@@ -1,0 +1,3 @@
+[submodule "modules/dots"]
+	path = modules/dots
+	url = https://github.com/ikar777333/dots
