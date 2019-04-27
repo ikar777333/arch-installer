@@ -22,7 +22,7 @@ cd yay
 makepkg --noconfirm -si
 
 #Polybar install
-#yay -S --noconfirm polybar
+yay -S --noconfirm polybar
 
 #Vim setup
 yay -S --noconfirm neovim-plug
@@ -33,8 +33,8 @@ yay -S --noconfirm i3lock-color
 #zsh refind-theme-regular.sh
 
 #Zsh install
-#sudo pacman -S --noconfirm zsh
-#sudo chsh -s /bin/zsh ikar
-#sudo chsh -s /bin/zsh root
-#sh /arch_installer_scripts/oh-my-zsh.sh
+sudo pacman -S --noconfirm zsh
+sudo chsh -s /bin/zsh ikar
+sudo chsh -s /bin/zsh root
+sh /arch_installer_scripts/oh-my-zsh.sh
 
