@@ -19,10 +19,10 @@ sudo systemctl enable slim.service
 cd /home/ikar/
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg --noconfirm -si
 
 #Polybar install
-yay -S polybar
+yay -S --noconfirm polybar
 
 #Vim setup
 yay -S --noconfirm neovim-plug
