@@ -22,7 +22,7 @@ cd yay
 makepkg --noconfirm -si
 
 #Polybar install
-yay -S --noconfirm polybar
+#yay -S --noconfirm polybar
 
 #Vim setup
 yay -S --noconfirm neovim-plug
@@ -30,7 +30,7 @@ yay -S --noconfirm visual-studio-code-bin
 yay -S --noconfirm jdk8
 yay -S --noconfirm urxvt-font-size-git
 yay -S --noconfirm i3lock-color
-zsh refind-theme-regular.sh
+#zsh refind-theme-regular.sh
 
 #Zsh install
 #sudo pacman -S --noconfirm zsh
