@@ -37,4 +37,3 @@ sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/oh-my-zsh.sh
-
