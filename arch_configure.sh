@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export HOME=/home/ikar 
 sudo pacman -S --noconfirm xf86-video-vesa 
 sudo pacman -S --noconfirm xorg-server xorg-apps xorg-xinit mesa 
 sudo pacman -S --noconfirm termite
@@ -37,3 +37,4 @@ sudo pacman -S --noconfirm zsh
 sudo chsh -s /bin/zsh ikar
 sudo chsh -s /bin/zsh root
 sh /arch_installer_scripts/oh-my-zsh.sh
+export HOME=/root 
