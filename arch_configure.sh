@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm xorg-server xorg-apps xorg-xinit mesa
 sudo pacman -S --noconfirm termite
 
 cd /home/ikar/
-Xorg :0 -configure
+#Xorg :0 -configure
 sudo cp /root/xorg.conf.new /etc/X11/xorg.conf
 
 sudo pacman -S --noconfirm alsa-utils alsa-plugins 
@@ -13,7 +13,7 @@ sudo pacman -S --noconfirm ranger wget chromium
 sudo pacman -S --noconfirm termite neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 
 sudo pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr
 sudo pacman -S --noconfirm ttf-ubuntu-font-family zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps tmux
-sudo systemctl enable slim.service
+#sudo systemctl enable slim.service
 
 #Yey install
 cd /home/ikar/
