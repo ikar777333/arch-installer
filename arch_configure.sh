@@ -11,7 +11,7 @@ sudo cp /root/xorg.conf.new /etc/X11/xorg.conf
 sudo pacman -S --noconfirm alsa-utils alsa-plugins 
 sudo pacman -S --noconfirm ranger wget chromium 
 sudo pacman -S --noconfirm termite neovim neofetch cmus htop thunar w3m nodejs npm maven rxvt-unicode urxvt-perls lxappearance-gtk3 
-sudo pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr
+sudo pacman -S --noconfirm i3-gaps slim rofi feh python-pywal xcompmgr stow
 sudo pacman -S --noconfirm ttf-ubuntu-font-family zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps tmux
 #sudo systemctl enable slim.service
 
