@@ -8,11 +8,11 @@
 #Setup mirrorlist
 echo -e "$(grep ".*.ru.*" /etc/pacman.d/mirrorlist)\n$(cat /etc/pacman.d/mirrorlist)" > /etc/pacman.d/mirrorlist
 
-mkfs.ext4 /dev/sda2
-mkfs.vfat /dev/sda1
-mount /dev/sda2 /mnt
+mkfs.ext4 /dev/sda
+mkfs.vfat /dev/sdb
+mount /dev/sda /mnt
 mkdir -p /mnt/boot/efi
-mount /dev/sda1 /mnt/boot/efi
+mount /dev/sdb /mnt/boot/efi
 
 #install arch
 pacstrap /mnt base-devel base
